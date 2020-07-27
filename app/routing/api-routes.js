@@ -8,7 +8,7 @@ module.exports = function (app) {
         res.json(waitingListData);
     });
     app.post('/api/tables', function (req, res) {
-        if (tableArray.length < 5) {
+        if (tableData.length < 5) {
             tableData.push(req.body);
             res.json(true);
         } else {
